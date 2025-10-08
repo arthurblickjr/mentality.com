@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE. MENTALITY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2e8b57;
+      --accent: #f4a261;
+      --bg: #f0f4f8;
+      --text: #333;
+      --white: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      color: var(--white);
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    #hero {
+      background: url('https://images.unsplash.com/photo-1556228724-4b1dcbf9f4f4?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: var(--white);
+      padding: 6rem 3rem;
+      text-align: center;
+    }
+
+    #hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    #hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      padding: 3rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: var(--primary);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 1.5rem;
+      border-left: 6px solid var(--accent);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      background: var(--primary);
+      color: var(--white);
+      border: none;
+      padding: 0.75rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background: #276b45;
+    }
+
+    footer {
+      background: #333;
+      color: var(--white);
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #hero h2 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>THE. MENTALITY</h1>
+    <nav>
+      <ul>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Welcome to THE. MENTALITY</h2>
+    <p>Your sanctuary for emotional strength, mental clarity, and holistic health. Created with care by Arthur — blending logic, love, and design.</p>
+  </section>
+
+  <section id="mission">
+    <h2>🌱 Our Mission</h2>
+    <p>THE. MENTALITY is a space where wellness meets wisdom. We empower individuals to manage stress, build resilience, and nurture their mental health through curated tools, heartfelt guidance, and community support.</p>
+  </section>
+
+  <section id="features">
+    <h2>✨ Features</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Daily Mental Boosts</h3>
+        <p>Receive affirmations, breathing exercises, and mindfulness prompts to start your day strong.</p>
+      </div>
+      <div class="card">
+        <h3>Wellness Tracker</h3>
+        <p>Log your mood, sleep, and habits to visualize your mental health journey.</p>
+      </div>
+      <div class="card">
+        <h3>Resource Library</h3>
+        <p>Explore articles, videos, and guides on anxiety, self-care, and emotional intelligence.</p>
+      </div>
+      <div class="card">
+        <h3>Community Forum</h3>
+        <p>Connect with others, share your story, and find support in a safe space.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>🖼️ Wellness Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=800&q=80" alt="Meditation" />
+      <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80" alt="Nature Walk" />
+      <img src="https://images.unsplash.com/photo-1525097487452-6278ff080c31?auto=format&fit=crop&w=800&q=80" alt="Journaling" />
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>📬 Contact Arthur</h2>
+    <p>Have questions, feedback, or want to collaborate? Reach out below:</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 THE. MENTALITY | Created by Arthur | All rights reserved</p>
+  </footer>
+</body>
+</html>
+
